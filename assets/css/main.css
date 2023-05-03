@@ -1,0 +1,19 @@
+@import url('https://fonts.cdnfonts.com/css/roboto');
+@import url('https://fonts.cdnfonts.com/css/lato');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    font-family: "Ubuntu", roboto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1040px;
+}
+
+.landing-section {
+    height: 100vh;
+}
