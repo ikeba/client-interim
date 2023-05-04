@@ -1,17 +1,18 @@
-@import url('https://fonts.cdnfonts.com/css/roboto');
-@import url('https://fonts.cdnfonts.com/css/lato');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html, body {
-    font-family: "Ubuntu", roboto;
+    font-family: "Ubuntu";
 }
 
 .container {
     width: 100%;
-    max-width: 1040px;
+    max-width: 1120px;
 }
 
 .landing-section {

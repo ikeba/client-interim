@@ -1,7 +1,5 @@
 <template>
-  <div id="services" class="landing-section">
-    contetn
-  </div>
+  <div id="services" class="landing-section" />
 </template>
 
 <script setup>

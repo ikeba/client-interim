@@ -8,7 +8,7 @@
 </script>
 <style scoped>
 .landing-section {
-  background-image: url('img/bgr.png');
+  background-image: url('/img/bgr.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

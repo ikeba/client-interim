@@ -7,7 +7,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['@nuxtjs/eslint-module'],
+  modules: ['@nuxtjs/eslint-module', '@nuxt/image-edge'],
   css: ['@/assets/css/main.css'],
   build: {
     // @ts-ignore
@@ -15,5 +15,8 @@ export default defineNuxtConfig({
       // eslint-disable-next-line import/extensions
       postcssOptions: require('./postcss.config.js'),
     },
+  },
+  image: {
+    // Options
   },
 });
