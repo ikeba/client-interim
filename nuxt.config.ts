@@ -7,7 +7,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['@nuxtjs/eslint-module', '@nuxt/image-edge'],
+  modules: ['@nuxtjs/eslint-module', '@nuxt/image-edge', '@nuxt/content'],
   css: ['@/assets/css/main.css'],
   build: {
     // @ts-ignore

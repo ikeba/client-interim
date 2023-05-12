@@ -1,0 +1,38 @@
+p, ul {
+    font-weight: 300;
+    color: #000;
+
+}
+
+h2, h3, h4, h5 {
+    color: #351044;
+    font-family: "Ubuntu";
+    line-height: 1.25em;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul li {
+    position: relative;
+    margin-left: 3.5em;
+    display: block;
+    margin-bottom: 0.2em;
+}
+
+ul li:before {
+    content: '•';
+    position: absolute;
+    left: -1em;
+
+}
+
+tr td, tr th {
+    padding: 5px;
+    font-size: 0.8em;
+}
+
+tr td:first-child {
+    word-break: break-all;
+}
