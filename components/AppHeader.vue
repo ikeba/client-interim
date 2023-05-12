@@ -18,6 +18,8 @@
 </template>
 
 <script setup>
+import { ref } from '#imports';
+
 const opened = ref(false);
 </script>
 
