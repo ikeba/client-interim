@@ -4,7 +4,7 @@
       Contact
     </h1>
     <div class="container tw-self-center tw-flex tw-flex-col md:tw-flex-row tw-p-4 tw-h-full">
-      <div class="tw-w-full tw-text-white tw-pr-5 tw-self-start">
+      <div class="tw-w-full tw-text-white md:tw-pr-5  tw-self-start">
         <form>
           <div>
             <label for="first" class="tw-mb-2 tw-block">Name</label>
@@ -30,13 +30,13 @@
         </form>
       </div>
       <div class="tw-w-full">
-        <!--        <iframe-->
-        <!--          class="tw-mt-[32px]"-->
-        <!--          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22872.92107939696!2d15.995139368173689!3d45.81261027038296!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d7b4c52d4fd9%3A0xa1ca517ab9e6767f!2sUl.%20Stara%20Pe%C5%A1%C4%87enica%20IV%201%2C%2010000%2C%20Zagreb%2C%20Croatia!5e0!3m2!1sen!2sus!4v1683896770531!5m2!1sen!2sus"-->
-        <!--          allowfullscreen=""-->
-        <!--          loading="lazy"-->
-        <!--          referrerpolicy="no-referrer-when-downgrade"-->
-        <!--        />-->
+        <iframe
+          class="tw-mt-[32px]"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22872.92107939696!2d15.995139368173689!3d45.81261027038296!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d7b4c52d4fd9%3A0xa1ca517ab9e6767f!2sUl.%20Stara%20Pe%C5%A1%C4%87enica%20IV%201%2C%2010000%2C%20Zagreb%2C%20Croatia!5e0!3m2!1sen!2sus!4v1683896770531!5m2!1sen!2sus"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        />
       </div>
     </div>
   </div>

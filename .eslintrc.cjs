@@ -19,6 +19,7 @@ module.exports = {
         "global-require": "off",
         "vue/multi-word-component-names": "off",
         "quotes": ["error", "single"],
-        "max-len": 'off'
+        "max-len": 'off',
+        "import/no-extraneous-dependencies": 'off',
     },
 }

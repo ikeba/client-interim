@@ -10,6 +10,7 @@ html, body {
     font-family: "Ubuntu";
     text-rendering: optimizelegibility;
     -webkit-font-smoothing: antialiased;
+    min-width: 320px;
 }
 
 .lato {
@@ -22,6 +23,6 @@ html, body {
 }
 
 .landing-section {
-    height: 100vh;
+    min-height: 100vh;
 }
 

@@ -1,17 +1,25 @@
-<script setup lang='ts'>
-</script>
 <template>
   <header class="tw-fixed tw-top-0 tw-w-[100%] tw-bg-white tw-px-10 tw-left-[50%] tw-translate-x-[-50%]">
     <div class="container tw-flex tw-justify-between tw-items-center tw-h-[73px] tw-mx-auto">
-      <img src="img/logo.svg" alt="Interim">
-      <div class="menu tw-uppercase tw-font-bold tw-text-sm tw-fixed md:tw-relative">
-        <a href="#home">Home</a>
-        <a href="#services" class="tw-pl-10">Services</a>
-        <a href="#contact" class="tw-pl-10">Contact</a>
+      <img src="~public/img/logo.svg" alt="Interim">
+      <button class="tw-flex md:tw-hidden hover:tw-opacity-60" @click="opened = true">
+        MENU
+      </button>
+      <div :class="{ opened }" class="tw-hidden md:tw-flex menu tw-flex-col md:tw-flex-row tw-justify-center tw-uppercase tw-font-bold tw-text-sm">
+        <button class="close-button tw-hidden tw-top-0 tw-p-4 tw-absolute hover:tw-opacity-60" @click="opened = false">
+          CLOSE
+        </button>
+        <a href="#home" @click="opened = false">Home</a>
+        <a href="#services" class="tw-pl-10" @click="opened = false">Services</a>
+        <a href="#contact" class="tw-pl-10" @click="opened = false">Contact</a>
       </div>
     </div>
   </header>
 </template>
+
+<script setup>
+const opened = ref(false);
+</script>
 
 <style scoped>
 header {
@@ -28,15 +36,52 @@ header {
 }
 
 .menu {
-  height: 100%;
-  width: 100%;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
   z-index: 10000;
+  top: 0;
+  left: 0;
+  background: #fff;
 }
 
-@media not all and (min-width: 768px) {
-.menu {
-  height: auto;
-  width: auto;
+.menu a {
+  display: block;
+  padding: 1.5rem 0;
+  text-align: center;
+  width: 100%;
+  font-size: 2rem;
 }
+
+.opened {
+  display: flex;
 }
+
+.close-button {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.opened .close-button {
+  display: block;
+}
+
+@media all and (min-width: 768px) {
+  .menu {
+    display: block;
+    position: relative;
+    height: auto;
+    width: auto;
+    z-index: 10000;
+  }
+
+  .menu a {
+    display: inline-block;
+    padding: 0 1rem;
+    text-align: center;
+    width: auto;
+    font-size: inherit;
+  }
+}
+
 </style>

@@ -1,0 +1,37 @@
+selector p, ul {
+    font-weight: 300;
+    color: #000;
+}
+
+selector h2, h3, h4, h5 {
+    color: #351044;
+    font-family: "Ubuntu";
+    line-height: 1.25em;
+}
+
+selector h2 {
+    text-align: center;
+}
+
+selector ul li {
+    position: relative;
+    margin-left: 3.5em;
+    display: block;
+    margin-bottom: 0.2em;
+}
+
+selector ul li:before {
+    content: '•';
+    position: absolute;
+    left: -1em;
+
+}
+
+selector tr td, selector tr th {
+    padding: 5px;
+    font-size: 0.8em;
+}
+
+selector tr td:first-child {
+    word-break: break-all;
+}
