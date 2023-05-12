@@ -8,10 +8,6 @@
 </script>
 <style scoped>
 .landing-section {
-  background-image: url('/img/bgr.png');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #350F45;
+  background: url('/img/bgr.png') center center / cover no-repeat #350F45;
 }
 </style>
